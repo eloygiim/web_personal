@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eloy.gimenez</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Portfolio de Diseño Gráfico de Eloy Giménez">
+    <meta name="author" content="Eloy Giménez">
+    <meta name="keywords" content="">
+
+
+    <!--Enlaces a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--Enlaces a iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--Enlace a tipografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body style="background-color: black;">
+    
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid ">
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo de eloy giménez" width="100px" height="">
+                    </a>
+                    <ul class="navbar-nav my-3 mx-auto d-flex justify-content-center align-items-center ">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="filosofia.html">Filosofía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                        
+                    </ul>
+                    <a href="contacto.html"><button class="btn btn-outline-success" type="button" href="contacto.html">CONTACTO</button></a>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <main container-fluid>
+        <section class="container-fluid py-5">
+            <div class="row">
+                <div class="col-12 col-md-6 text-white text-right px-5 mb-5">
+                    <p class="texto-contacto mb-5">Dame la idea, que yo le meto más diseño</p>
+                    
+                    <!-- Contacto -->
+                    <div class="mb-5 texto-datos">
+                        <p class="text-white mb-1">info@eloygimenez.com</p>
+                        <p class="text-white mb-0 ">+36 966 435 577</p>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <ul class="rrss-lista list-unstyled text-end">
+                        <li><a href="#" class="rrss-link">Instagram</a></li>
+                        <li><a href="#" class="rrss-link">Behance</a></li>
+                        <li><a href="#" class="rrss-link">Linkedin</a></li>
+                        <li><a href="#" class="rrss-link">Github</a></li>
+                    </ul>
+                </div>
+                
+                <section class="col-12 col-md-6 text-white px-5 d-flex justify-content-center align-items-start mb-5">
+                    <form action="contacto.php" method="post" autocomplete="off" class="chat d-flex flex-column gap-4">
+                        <div class="persona text-black">
+                            <img src="img/fotoeloy.jpg" alt="foto de eloy"> <span class="chat-nombre">eloy.giménez</span>
+                        </div>
+                        <div class="mensaje d-flex justify-content-start">¡Hola! En qué puedo ayudarte</div>
+                        <div class="mensaje dcha d-flex justify-content-end text-align-right">Buenas, soy <input type="text" name="nombre" id="nombre" placeholder="Nombre" required></div>
+                        <div class="mensaje d-flex justify-content-start">¿De qué empresa vienes?</div>
+                        <div class="mensaje dcha d-flex flex-end">De <input type="text" name="empresa" id="empresa" placeholder="Empresa" required></div>
+                        <div class="mensaje d-flex justify-content-start">¿Cómo me puedo comunicar con vosotros?</div>
+                        <div class="mensaje dcha d-flex flex-end">Llamando al <input type="tel" name="telefono" id="telefono" placeholder="636 147 258" required></div>
+                        <div class="mensaje dcha d-flex flex-end">O escribiendo a <input type="mail" name="correo" id="correo" placeholder="Correo" required></div>
+                        <button class="btn-enviar" type="submit">ENVIAR</button>
+                    </form>        
+                </section>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex flex-column align-items-center justify-content-center">
+        <div class="text-center">
+            <p class="footer-texto text-center">Puedes ser el siguiente</p>
+            <a href="contacto.html" class="btn btn-outline-success btn-contacto">CONTACTO</a>
+        </div>
+        <nav>
+            <ul class="navbar-nav mx-auto d-flex flex-row flex-wrap justify-content-center align-items-center nav-footer">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="filosofia.html">Filosofía</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>          
+            </ul>
+        </nav>
+        
+        <div class="iconos-rrss d-flex flex-wrap align-items-center justify-content-center">
+            <a href="" target="_blank" rel="noopener noreferrer">
+               <i class="bi bi-instagram"></i> 
+            </a>
+            <a href="" target="_blank">
+               <i class="bi bi-behance"></i> 
+            </a>
+            <a href="" target="_blank">
+               <i class="bi bi-linkedin"></i> 
+            </a>
+            <a href="" target="_blank">
+               <i class="bi bi-github"></i> 
+            </a>
+            <a href="mailto:elogimsol6@gmail.com" target="_blank">
+               <i class="bi bi-envelope"></i> 
+            </a>
+        </div>
+        <div class="autor text-center">© Creado por Eloy.Giménez (2026) </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

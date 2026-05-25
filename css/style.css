@@ -1,0 +1,507 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: Unbounded, sans-serif;
+    font-size: 16px;
+    background-color: black;   
+}
+
+* {
+    cursor: crosshair;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1{
+    color: #CCFF00;
+    font-size: clamp(2.75rem, 6.5vw, 4rem);
+}
+
+h2{
+    font-weight: 200;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+#hero{
+    background-color: #CCFF00;
+    min-height: 100%;
+    text-align: center;
+
+}
+
+/* Modificación estilos del nav*/
+.navbar{
+    padding: 1rem 2rem; 
+}
+
+.navbar img{
+    cursor: pointer;
+}
+
+.navbar-brand{
+    margin-right: 0;
+}
+
+
+/* Cambiar colores del toggler */
+.navbar-toggler{
+    border-color: #CCFF00;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 1px #ccff00;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ccff00' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Separar elementos del menú */
+header ul{
+   gap: 10px; 
+}
+
+
+
+
+/* Cambiar propiedades del botón primario (esto se aplica en toda la web no solo en el nav) */
+.btn-outline-success{
+    color: #ccff00;                 
+    border-color: #ccff00;          
+    border-radius: 20px; 
+    font-size: 0.9rem;   
+}
+
+/* Estado hover cuando el usuario pasa el ratón */
+.btn-outline-success:hover{
+    background-color: #ccff00;      
+    color: #000000;                 
+    border-color: #ccff00;
+}
+
+.actual{
+    background-color: #ccff00;      
+    color: #000000;                 
+    border-color: #ccff00
+}
+
+/* Cambiar propiedades del botón primario del footer */
+footer .btn-outline-success{
+    color: #000000;                 
+    border-color: #000000;          
+    border-radius: 20px;
+    margin-bottom: 10px;          
+}
+
+footer .btn-outline-success:hover{
+    background-color: #000000;      
+    color: #CCFF00;                 
+}
+
+
+
+/* Estilos del footer */
+footer{
+    background-color: #CCFF00;
+    padding: 1rem;
+    color: #000000;
+    gap: 10px;
+}
+
+.nav-footer{
+    gap: 20px;
+}
+
+.nav-footer .nav-link:hover {
+    color: #535353;
+    transition: color 0.3s ease;
+}
+
+.footer-logo{
+    height: 50px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+/* esto da estilos a los icones de rrss*/
+.iconos-rrss a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    
+}
+
+.iconos-rrss a:hover{
+   background-color: #000000;
+   
+}
+
+.iconos-rrss i{
+    color: #000000;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in;
+    padding: 10px;   
+    cursor: pointer;
+}
+
+.iconos-rrss i:hover{
+   color: #CCFF00; 
+}
+
+.autor{
+   font-size: 12px;
+   padding: 20px;
+   color: rgb(74, 105, 0);
+}
+
+
+
+/*PÁGINA DE SERVICIOS
+Keywords pequeñas*/
+.keywords{
+    font-size: 0.7rem;
+    color: #fff;
+    word-spacing: 5px;
+    font-weight: 300;
+}
+
+/* Línea verde. Después de 30 minutos he descubierto que bootstrap pone por defecto la opacidad de los hr a 25%, por eso se pone aquí en 1 */
+.hr-verde{
+    border: 1px solid #ccff00;
+    opacity: 1;
+}
+
+.texto-servicios{
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.img-servicios{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-servicios:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*PÁGINA DE CONTACTO
+Texto izq*/
+.texto-contacto{
+    font-size: clamp(2.5rem, 4vw, 6rem);
+    font-weight: 200;
+    text-align: right;
+    max-width: 1300px;
+    line-height: 1.25;
+    margin-bottom: 5rem;
+}
+
+.rrss-lista{
+    margin-bottom: 0;
+}
+
+.rrss-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 30px);
+    font-weight: 200;
+    transition: color 0.3s ease;
+}
+
+.rrss-link:hover{
+    color: #ccff00;
+}
+
+.texto-datos{
+    font-size: clamp(1rem, 2vw, 30px);
+    text-align: right;
+    font-weight: 200;
+}
+
+
+
+
+/* Todo esto es para el formulario */
+.chat{
+    padding: 1rem;
+    background-color: #ccff00;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+/* Header */
+.persona{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.persona img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat-nombre{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.mensaje{ 
+    background-color: #000000;
+    color: #CCFF00;
+    padding: 12px 16px;
+    border-radius: 25px 25px 25px 0px;
+    font-size: 0.95rem;
+    font-weight: 200;
+    width: fit-content;
+    max-width: 100%;
+    align-self: flex-start;
+    line-height: 1.4;
+}
+
+.mensaje input{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: "PT Serif", serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    outline: none;
+    width: 120px;
+    padding: 2px 0;
+}
+
+.mensaje input::placeholder{
+    color: rgba(197, 197, 197, 0.575);
+    text-decoration: underline;
+}
+
+/* Esta clas ees para que parezca que los mensajes son de la derecha  */
+.dcha{
+    border-radius: 25px 25px 0px 25px;
+    justify-content: flex-end;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+
+/* Botón enviar */
+.btn-enviar{
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 4px 40px;
+    font-weight: 300;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.btn-enviar:hover{
+    color: #ccff00;
+}
+
+/*PÁGINA SOBRE MÍ
+Nombre en grande*/
+
+
+
+.nombre-sobre-mi{
+    font-size: clamp(2rem, 6vw, 6rem);
+    font-weight: 200;
+    color: #fff;
+}
+
+.descripcion-sobre-mi{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.sobre-mi-peq{
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.sobre-mi-estudios{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.fechas{
+    width: 120px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 991.98px){
+    .img-sobre-mi {
+        max-height: 400px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1600px){
+    .img-sobre-mi {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+/* Esto es para la página de filosofía */
+.col-filosofia{
+    padding: 0 3rem;
+}
+
+.texto-filosofia{
+    font-size: clamp(0.9rem, 2vw, 1.25rem);
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.circulo{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border: 2px solid #ccff00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metodologia{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color:#CCFF00;
+}
+.metodologia-titulo{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.metodologia-texto{
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.logo-cliente img{
+    max-height: 50px;
+    width: auto;
+}
+
+.titulo-empresas{
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: #fff;
+}
+
+.logo-cliente-peq img{
+    max-height: 60px;
+    width: auto;
+}
+.logo-cliente-grande img{
+    max-height: 45px;
+    width: auto;
+}
+
+
+
+
+/* Estilos página de proyectos */
+
+.img-proyectos{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-proyectos:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Estilos home */
+
+.home {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.nav-home{
+    background-color: rgba(0, 0, 0, 0.25) !important; /* Negro semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+}
+
+.hero-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
