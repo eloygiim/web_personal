@@ -26,44 +26,242 @@
 
     <!--Estilos propios-->
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  
-  <body class="home">
-     
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md nav-home">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
 
-    <main>
-            <header>
-                <nav class="navbar navbar-expand-md nav-home">
-                    <div class="container-fluid ">
-                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt="Logo de eloy giménez" width="100px" height="">
+                        </a>
+                        <ul class="navbar-nav my-3 mx-auto d-flex justify-content-center align-items-center ">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                                    
+                        </ul>
+                        <a href="contacto.html"><button class="btn btn-outline-success" type="button">CONTACTO</button></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-                        <div class="collapse navbar-collapse text-center" id="navbarNav">
-                            <a class="navbar-brand" href="#">
-                                <img src="img/logo.png" alt="Logo de eloy giménez" width="100px" height="">
-                            </a>
-                            <ul class="navbar-nav my-3 mx-auto d-flex justify-content-center align-items-center ">
-                                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                                <li class="nav-item"><a class="nav-link" href="filosofia.html">Filosofía</a></li>
-                                <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
-                                
-                            </ul>
-                            <a href="contacto.html"><button class="btn btn-outline-success" type="button">CONTACTO</button></a>
+        <main>
+            <section class="section-gif">
+                <video class="hero-gif" autoplay loop muted playsinline>
+                    <source src="img/video-home.webm" type="video/webm">
+                </video>
+            </section>
+
+            <section class="container-fluid py-5 px-4">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 py-3">
+                    <h3 class="text-white mb-0">PROYECTOS RECIENTES</h3>
+                    <a href="proyectos.html" class="btn btn-outline-success btn-contacto">VER TODOS <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-5 text-white">
+                        <h6>Exposición El Cocherón</h6>
+                        <img src="img/cocher.png" alt="Mockup de publicidad de la exposición El Cocherón" class="img-fluid img-proyectos">
+                    </div>
+                    <div class="col-6 col-md-3 mb-5 text-white">
+                        <h6>Carteles FEM Coliving</h6>
+                        <img src="img/FEM.webp" alt="Mockup de carteles de FEM" class="img-fluid img-proyectos">
+                    </div>
+                    <div class="col-6 col-md-3 text-white">
+                        <h6>Revista F1UM</h6>
+                        <img src="img/F1UM PAG1.jpg" alt="Mockup de páginas interiores del libro F1UM" class="img-fluid img-proyectos">
+                    </div>
+                    <div class="col-6 col-md-3 text-white">
+                        <h6>Llibret Falla Palleter</h6>
+                        <img src="img/llibret1.webp" alt="Mockup de páginas interiores del Llibret" class="img-fluid img-proyectos">
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid px-5 py-5">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 py-3">
+                    <h3 class="text-white mb-0">ESPECIALIDADES</h3>
+                    <a href="servicios.html" class="btn btn-outline-success btn-contacto">MÁS INFORMACIÓN <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="row">
+                        <a href="servicios.html" class="home-servicio-item">
+                            <span class="home-servicio-num">01</span>
+                            <span class="home-servicio-nombre">Editorial</span>
+                            <span class="home-servicio-flecha"><i class="bi bi-arrow-up-right"></i></span>
+                        </a>
+                        <hr class="hr-verde my-0">
+                        <a href="servicios.html" class="home-servicio-item">
+                            <span class="home-servicio-num">02</span>
+                            <span class="home-servicio-nombre">Branding</span>
+                            <span class="home-servicio-flecha"><i class="bi bi-arrow-up-right"></i></span>
+                        </a>
+                        <hr class="hr-verde my-0">
+                        <a href="servicios.html" class="home-servicio-item">
+                            <span class="home-servicio-num">03</span>
+                            <span class="home-servicio-nombre">Cartelería</span>
+                            <span class="home-servicio-flecha"><i class="bi bi-arrow-up-right"></i></span>
+                        </a>
+                        <hr class="hr-verde my-0">
+                        <a href="servicios.html" class="home-servicio-item">
+                            <span class="home-servicio-num">04</span>
+                            <span class="home-servicio-nombre">Obra social</span>
+                            <span class="home-servicio-flecha"><i class="bi bi-arrow-up-right"></i></span>
+                        </a>
+                    
+                </div>
+            </section>
+
+            <!-- SOBRE MÍ -->
+            <section class="container-fluid px-5 py-5">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <img src="img/fotoeloy.jpg" alt="Foto de Eloy Giménez" class="img-fluid img-sobre-mi">
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="container-fluid text-center pb-4 px-0 px-lg-5">
+                            <h1 class="text-start">Filosofía de trabajo</h1>
+                            <h2 class="text-start ms-0">Especializado en multitud de disciplinas que se adaptan a las necesidades de tu proyecto</h2>
+                        </div>
+
+                        <div class="row text-white px-3">
+                            <div class="col-12 col-xl-4 py-3 px-0 px-lg-5">
+                                <p class="texto-filosofia">Entiendo el diseño como una herramienta de transformación positiva, donde cada decisión responde a un compromiso ético con las personas y el entorno.</p>
+                            </div>
+                            <div class="col-12 col-xl-4 py-3 px-0 px-lg-5">
+                                <p class="texto-filosofia">Sensibilidad hacia los contextos sociales, culturales y ambientales mediante soluciones que respetan la diversidad, reducen impactos y generan valor real.</p>                                
+                            </div>
+                            <div class="col-12 col-xl-4 py-3 px-0 px-lg-5">
+                                <p class="texto-filosofia">Abordo cada proyecto con la convicción de que el diseño con un enfoque consciente puede mejorar la calidad de vida y contribuir a un futuro más equilibrado.</p>
+                            </div> 
+                    </div>
+                    <div class="container-fluid text-start pb-4 px-0 px-lg-5">
+                        <a href="contacto.html" class="btn btn-outline-success">CONOCER MÁS</a>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+           <section class="container-fluid py-5 px-5">
+                <div class="row align-items-center text-white">
+
+                    <h2 class="d-block d-lg-none metodologia mb-3">Metodología Sostenible</h2>
+                   
+                    <div class="col-12 col-lg-3">
+                        <div class="mb-5">
+                            <h4 class="metodologia-titulo">1.— Observación</h4>
+                            <p class="texto-filosofia">Observación profunda del contexto para comprender las necesidades reales de las personas, el uso del entorno y el impacto que genera la solución actual.</p>
+                            
+                        </div>
+                        <div    class="mb-5">
+                            <h4 class="metodologia-titulo">2.— Síntesis</h4>
+                            <p class="texto-filosofia">Definición con claridad del reto a resolver, sintetizando la información obtenida en una oportunidad concreta y viable.</p>
+                            </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-none d-lg-flex justify-content-center align-items-center py-5">
+                        <div class="circulo">
+                            <h2 class="metodologia text-center">Metodología Sostenible</h2>   
                         </div>
                     </div>
-                </nav>
-            </header> 
-            <video class="hero-gif" autoplay loop muted playsinline>
-                <source src="img/video-home.webm" type="video/webm">
-            </video>
-        
-    </main>
 
+                    <div class="col-12 col-lg-3 text-lg-end">
+                        <div class="mb-5">
+                            <h4 class="metodologia-titulo">3.— Exploración creativa</h4>
+                            <p class="texto-filosofia">impulsa la generación de ideas y propuestas desde un peansamiento abierto, con el fin de explorar alternativas variadas antes de elegir una dirección definitiva.</p>
+                            </div>
+                        <div class="mb-5">
+                            <h4 class="metodologia-titulo">4.— Validación</h4>
+                            <p class="texto-filosofia">Desarrollo de prototipos y evaluación con usuarios reales para detectar puntos de dolor y áreas de mejora, reduciendo el desperdicio.</p>
+                           </div>
+                    </div>
 
+                </div>
+            </section>
+
+            <!-- Empresas que han confiado en mí -->
+            <section class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-white text-start text-md-end px-5 mb-5">
+                        <h3 class="titulo-empresas mb-3">Estas empresas han confiado en mis servicios</h3>
+                        <a href="contacto.html" class="btn btn-outline-success">SOLICITAR INFORMACIÓN</a>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-row flex-wrap text-white px-5 mb-5">
+                        <div class="row g-4 align-items-center justify-content-center">
+                            <div class="col-6 logo-cliente mb-4">
+                                <img src="img/cliente 1.png" alt="Universidad Europea" class="img-fluid">
+                            </div>
+                            <div class="col-6 logo-cliente-peq mb-4">
+                                <img src="img/cliente 2.png" alt="Ayuntamiento de Buñol" class="img-fluid">
+                            </div>
+                            <div class="col-6 logo-cliente mb-4">
+                                <img src="img/cliente 3.png" alt="Mensajeros de la paz" class="img-fluid">
+                            </div>
+                            <div class="col-6 logo-cliente mb-4">
+                                <img src="img/cliente 4.png" alt="FEM Coliving" class="img-fluid">
+                            </div>
+                            <div class="col-6 logo-cliente-grande mb-4">
+                                <img src="img/cliente 5.png" alt="Russafart" class="img-fluid">
+                            </div>
+                            <div class="col-6 logo-cliente-peq mb-4">
+                                <img src="img/cliente 6.png" alt="Falla Palleter" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA FINAL -->
+            <section class="container-fluid justify-content-center align-items-center px-4 py-5 mb-5">
+                <div class="d-flex flex-column align-items-center justify-content-center gap-4 text-center">
+                    <h2 class="home-contacto-titulo">¿Tienes un proyecto<br>en mente?</h2>
+                    <a href="contacto.html" class="btn btn-outline-success px-5 py-3 home-cta-grande">HABLEMOS</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="d-flex flex-column align-items-center justify-content-center">
+            <div class="text-center">
+                <p class="footer-texto text-center">Puedes ser el siguiente</p>
+                <a href="contacto.html" class="btn btn-outline-success btn-contacto">CONTACTO</a>
+            </div>
+            <nav>
+                <ul class="navbar-nav mx-auto d-flex flex-row flex-wrap justify-content-center align-items-center nav-footer">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>          
+                </ul>
+            </nav>
+                
+            <div class="iconos-rrss d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://www.instagram.com/eloycreatiu/" target="_blank">
+                <i class="bi bi-instagram"></i> 
+                </a>
+                <a href="https://www.behance.net/eloygimenez" target="_blank">
+                <i class="bi bi-behance"></i> 
+                </a>
+                <a href="https://www.linkedin.com/in/elogimsol/" target="_blank">
+                <i class="bi bi-linkedin"></i> 
+                </a>
+                <a href="https://github.com/eloygiim" target="_blank">
+                <i class="bi bi-github"></i> 
+                </a>
+                <a href="mailto:elogimsol6@gmail.com" target="_blank">
+                <i class="bi bi-envelope"></i> 
+                </a>
+            </div>
+            <div class="autor text-center">© Creado por Eloy.Giménez (2026) </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>

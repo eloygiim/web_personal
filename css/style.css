@@ -7,14 +7,6 @@ body{
     background-color: black;   
 }
 
-* {
-    cursor: crosshair;
-}
-
-a, button {
-    cursor: pointer;
-}
-
 h1{
     color: #CCFF00;
     font-size: clamp(2.75rem, 6.5vw, 4rem);
@@ -48,10 +40,6 @@ section{
     padding: 1rem 2rem; 
 }
 
-.navbar img{
-    cursor: pointer;
-}
-
 .navbar-brand{
     margin-right: 0;
 }
@@ -78,8 +66,6 @@ header ul{
 }
 
 
-
-
 /* Cambiar propiedades del botón primario (esto se aplica en toda la web no solo en el nav) */
 .btn-outline-success{
     color: #ccff00;                 
@@ -88,7 +74,7 @@ header ul{
     font-size: 0.9rem;   
 }
 
-/* Estado hover cuando el usuario pasa el ratón */
+/* Estado hover */
 .btn-outline-success:hover{
     background-color: #ccff00;      
     color: #000000;                 
@@ -131,11 +117,6 @@ footer{
 .nav-footer .nav-link:hover {
     color: #535353;
     transition: color 0.3s ease;
-}
-
-.footer-logo{
-    height: 50px;
-    margin: 10px;
 }
 
 .footer-texto{
@@ -254,8 +235,6 @@ Texto izq*/
 }
 
 
-
-
 /* Todo esto es para el formulario */
 .chat{
     padding: 1rem;
@@ -267,7 +246,7 @@ Texto izq*/
     border-radius: 10px;
 }
 
-/* Header */
+/* esto de mi nombre arriba*/
 .persona{
     display: flex;
     align-items: center;
@@ -287,6 +266,7 @@ Texto izq*/
     color: #000;
 }
 
+/* esto para los mensajes */
 .mensaje{ 
     background-color: #000000;
     color: #CCFF00;
@@ -348,11 +328,9 @@ Texto izq*/
     color: #ccff00;
 }
 
+
 /*PÁGINA SOBRE MÍ
 Nombre en grande*/
-
-
-
 .nombre-sobre-mi{
     font-size: clamp(2rem, 6vw, 6rem);
     font-weight: 200;
@@ -400,15 +378,113 @@ Nombre en grande*/
     }
 }
 
-
-
-/* Esto es para la página de filosofía */
-.col-filosofia{
-    padding: 0 3rem;
+/* Estilos proyectos */
+/* Estilos de textos de proyectos */
+.titulo-proyecto{
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 5 00;
+    color: #fff;
+    margin-right: 1rem;
 }
 
+.año-proyecto{
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 200;
+    color: #ccff00;
+}
+
+.descripcion-proyecto{
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 200;
+    color: #fff;
+}
+.flecha-proyecto{
+    font-size: 1.5rem;
+    color: #ccff00;
+}
+/* Estilos imágenes proyectos */
+.img-proyectos{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-proyectos:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Estilos home */
+/* Header y gif */
+.nav-home{
+    position:absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25) !important; /* Negro semitransparente */
+    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+}
+
+.section-gif{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-gif {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .nav-home {
+        position: relative;
+    }
+}
+
+/* Servicios en la hone */
+
+.home-servicio-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.home-servicio-item:hover {
+    color: #ccff00;
+}
+
+.home-servicio-num {
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: rgba(111, 199, 130, 0.685);
+    min-width: 30px;
+}
+
+.home-servicio-nombre {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 200;
+    flex: 1;
+}
+
+.home-servicio-flecha {
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.home-servicio-item:hover .home-servicio-flecha{
+    opacity: 1;
+}
+
+
+/* Esto es para los apartados de sobre-mi y filosofia y logos de las empresas */
 .texto-filosofia{
-    font-size: clamp(0.9rem, 2vw, 1.25rem);
+    font-size: clamp(0.9rem, 0.95vw, 1.5rem);
     font-weight: 200;
     line-height: 1.6;
 }
@@ -435,12 +511,6 @@ Nombre en grande*/
     margin-bottom: 0.5rem;
 }
 
-.metodologia-texto{
-    font-size: clamp(0.75rem, 2vw, 1rem);
-    font-weight: 200;
-    line-height: 1.6;
-}
-
 .logo-cliente img{
     max-height: 50px;
     width: auto;
@@ -450,6 +520,8 @@ Nombre en grande*/
     font-size: clamp(1.5rem, 3.5vw, 3rem);
     font-weight: 300;
     color: #fff;
+    max-width: 500px;
+    margin-left: auto;
 }
 
 .logo-cliente-peq img{
@@ -462,46 +534,13 @@ Nombre en grande*/
 }
 
 
-
-
-/* Estilos página de proyectos */
-
-.img-proyectos{
+/* Botón final */
+.home-contacto-titulo {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 200;
+    color: #ccff00;
+    line-height: 1.2;
     max-width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    transition: all 0.3s ease-in-out;
+    margin-left: 0;
 }
-
-.img-proyectos:hover{
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}
-
-
-/* Estilos home */
-
-.home {
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-}
-
-.nav-home{
-    background-color: rgba(0, 0, 0, 0.25) !important; /* Negro semitransparente */
-    backdrop-filter: blur(10px); /* Desenfoque del fondo */
-}
-
-.hero-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 
